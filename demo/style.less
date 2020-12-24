@@ -1,0 +1,27 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contianer {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item {
+    background-color: whitesmoke;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    &:not(:last-child) {
+        margin-bottom: 2px;
+    }
+}
+
+.drop-item {
+    border-top: 1px purple solid;
+}
