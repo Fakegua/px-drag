@@ -1,2 +1,8 @@
 node_modules
 .cache
+/dist/**/*
+!/dist/index.css
+!/dist/index.css.map
+!/dist/index.js
+!/dist/index.js.map
+!/dist/index.d.ts

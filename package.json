@@ -5,7 +5,8 @@
     "main": "./dist/index.js",
     "scripts": {
         "dev": "parcel ./demo/index.html",
-        "build": "parcel build ./src/index.tsx"
+        "build": "parcel build ./src/index.tsx && yarn tsc",
+        "tsc": "tsc -d ./src/index.tsx --outDir ./dist --esModuleInterop --jsx react -t es5 --emitDeclarationOnly --lib es2015,dom"
     },
     "devDependencies": {
         "@types/classnames": "^2.2.11",
@@ -20,8 +21,9 @@
     },
     "author": "潘俊文 <panjunwen@cvte.com>",
     "license": "MIT",
-    "peerDependencies": {
+    "dependencies": {
         "react": "17.0.1",
         "react-dom": "^17.0.1"
-    }
+    },
+    "peerDependencies": {}
 }
